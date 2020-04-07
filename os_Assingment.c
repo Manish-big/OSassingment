@@ -35,5 +35,24 @@ void main()
   }
   }
   }
+  wt[0]=0;
+  for(i=1;i<n;i++)
+  {
+   wt[i]=wt[i-1]+et[i-1];
+   totwt=totwt+wt[i];
+   } 
+
+ for(i=1;i<n;i++){
+	tat[i] = p[i][1] + wt[i] 
+} 
+
+avgwt=(float)totwt/n;  
+printf("p_name\t p_time\t priority\t w_time\n");
+for(i=0;i<n;i++)  
+{
+   printf(" %s\t %d\t %d\t %d\n%d\n" ,p[i],pt[i],pr[i],wt[i],tat[i]);
+   }
+  printf("total waiting time=%d\n avg waiting time=%f",tot,avg);
+  getch();
+   }
   
-}
