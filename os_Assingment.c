@@ -1,7 +1,6 @@
 #include<stdio.h>
 #include<conio.h>
 void main()
-//73886MsMsAm13058
 {
   char p[10][5],temp[5];
   int i,j,pt[10],wt[10],totwt=0,tat[10],pr[10],temp1,n;
@@ -17,7 +16,7 @@ void main()
   printf("enter priority:");
   scanf("%d",&pr[i]);
   }
-   for(i=0;i<n-1;i++)
+ for(i=0;i<n-1;i++)
  {
  for(j=i+1;j<n;j++)
  {
@@ -35,7 +34,7 @@ void main()
   }
   }
   }
-  wt[0]=0;
+ wt[0]=0;
   for(i=1;i<n;i++)
   {
    wt[i]=wt[i-1]+et[i-1];
@@ -55,4 +54,3 @@ for(i=0;i<n;i++)
   printf("total waiting time=%d\n avg waiting time=%f",tot,avg);
   getch();
    }
-  
